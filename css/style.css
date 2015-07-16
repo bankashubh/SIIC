@@ -25,6 +25,14 @@ color: #000000;;
 }
 
 /****************************
+GENERAL
+*****************************/
+.card, .container {
+	min-width: 500px;
+	max-width: 700px;
+}
+
+/****************************
 REGISTRATION FORM
 *****************************/
 .card-action .row, .card-content .row {
@@ -33,6 +41,15 @@ REGISTRATION FORM
 
 .dropdown-content {
 	max-height: 212px;
+}
+
+#registration-card-container{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#srm-mail {
+	padding-top:25px;
 }
 
 #official, #professional {

@@ -1,0 +1,17 @@
+
+Photo
+Full Name
+Contact Number
+Email
+Date of Birth
+
+Register Number
+Department
+Year
+
+
+Domain	
+Skill set	
+Experience
+
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+<title>SIIC - SRM Innovation and Incubation Center</title>
+
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">SIIC</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="about.html">About Us</a></li>
+      <li><a class='dropdown-button btn' data-hover="true" data-beloworigin="true" href='#' data-activates='dropdown1'>Innovation</a> 
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="participate.html">Participation</a></li>
+          <li><a href="research.html">Research</a></li>
+        </ul>
+      </li>
+      <li><a href="incubation.html">Incubation</a></li>
+      <li><a href="register.html">Be a part!</a></li>
+    </ul>
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="participate.html">Participation</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="incubation.html">Incubation</a></li>
+      <li><a href="register.html">Be a part!</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6 offset-m3">
+      <div class="card">
+        <div class="card-image"> <img src="images/form-image.png" alt="Hills and deer"> <span class="card-title">Registration</span> </div>
+        <div class="card-content"> 
+          <!--Form-->
+          <div class="row"> 
+            <!--The tabs list div-->
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s4"> <a href="#personal">Personal</a> </li>
+                <li class="tab col s4"> <a href="#official">Official</a> </li>
+                <li class="tab col s4"> <a href="#professional">Professional</a> </li>
+              </ul>
+            </div>
+            <form class="col s12">
+              <div id="personal" class="col s12">
+                <div class="row"> 
+                  <!--Name-->
+                  <div class="input-field col s12"> <i class="material-icons prefix">account_circle</i>
+                    <input placeholder="Jhon Doe" type="text" id="full-name" class="validate">
+                    <label for="full-name">Full Name</label>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <!--Phone-->
+                  <div class="input-field col s12"> <i class="material-icons prefix">phone</i>
+                    <input type="tel" id="phone-number" class="validate">
+                    <label for="phone-number">Phone Number</label>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <!--Email-->
+                  <div class="input-field col s12"> <i class="material-icons prefix">email</i>
+                    <input type="email" id="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <!--Birthdate-->
+                  <div class="input-field col s12"> <i class="material-icons prefix">perm_contact_calendar</i>
+                    <input type="date" id="dob" class="datepicker">
+                    <label for="email">Date of Birth</label>
+                  </div>
+                </div>
+              </div>
+              <div id="official" class="col s12">
+                <div class="row"> 
+                  <!--Register Number-->
+                  <div class="input-field col s12">
+                    <input type="text" id="register-number">
+                    <label for="full-name">Register Number</label>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <!--Department options-->
+                  <div class="input-field col s12 m8">
+                    <select size="2">
+                      <option value="" disabled selected>Choose your department</option>
+                      <option value="CSE">CSE</option>
+                      <option value="ECE">ECE</option>
+                      <option value="Mechanical">Mechanical</option>
+                    </select>
+                    <label>Department</label>
+                  </div>
+                  <!--Year-->
+                  <div class="input-field col s12 m4">
+                    <select>
+                      <option value="" disabled selected>Choose your year</option>
+                      <option value="2">II</option>
+                      <option value="3">III</option>
+                      <option value="4">IV</option>
+                    </select>
+                    <label>Year</label>
+                  </div>
+                </div>
+              </div>
+              <div id="professional" class="col s12">
+                <div class="row"> 
+                  <!--Domain-->
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Choose a domain</option>
+                      <option value="dom1">Coding</option>
+                      <option value="dom2">Creative</option>
+                      <option value="dom3">Electronics</option>
+                      <option value="dom4">Management</option>
+                      <option value="dom5">Mechanical</option>
+                    </select>
+                    <label>Domain</label>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <!--Skill set-->
+                  <div class="input-field col s12">
+                    <input id="skill-set" type="text" length="100">
+                    <label for="skill-set">Skill Set</label>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <!--Experience-->
+                  <div class="input-field col s12">
+                    <input id="experience" type="text" length="200">
+                    <label for="experience">Experience</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card-action"> 
+        	<div class="row">
+            	<div class="col s12 m3">
+                	<div class="offset-m6">
+                    	<a href="#">Back</a>
+                    </div>
+                    <div class="offset-m9">
+                    	<a href="#">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="page-footer orange">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">SIIC</h5>
+        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any kind of help would help support and continue development on this project and is greatly appreciated.</p>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Facebook</a></li>
+          <li><a class="white-text" href="#!">Twitter</a></li>
+          <li><a class="white-text" href="#!">Google+</a></li>
+          <li><a class="white-text" href="#!">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container"> Developed by <a class="orange-text text-lighten-3" href="#!">Aura Lab</a> </div>
+  </div>
+</footer>
+
+<!--  Scripts--> 
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+<script src="../../bin/materialize.js"></script> 
+<script src="js/materialize.min.js"></script> 
+<script src="js/init.js"></script>
+</body>
+</html>

@@ -26,16 +26,28 @@
 		$("#back-btn").addClass("disabled");
 		$("#next-btn").addClass("disabled");
 		
+		//Hide error-message
+		$("#error-msg").hide();
+		
 		//Prevent submit on enter
 		preventEnter();
 		
 		console.log($("#"+$pages[$current]+" input"));
 		$("#"+$pages[$current]+" input").on("keyup change mouseenter", checkForEmptyFields);
 		
-		$("#next-btn").on("click mouseenter", function(){
+		$("#registration-submit-btn").on("focus submit click", function(){
+			checkForEmptyFields();
+			if($(this).hasClass("disabled")){
+				$("#error-msg").fadeIn().delay(1000).fadeOut("slow");
+				return;
+			}
+		});
+		
+		$("#next-btn").on("click", function(){
 			checkForEmptyFields();
 			
 			if($(this).hasClass("disabled")){
+				$("#error-msg").fadeIn().delay(1000).fadeOut("slow");
 				return;
 			}
 			
@@ -65,11 +77,6 @@
 			$next--;
 			
 			checkForPageNumber($current);
-		});
-		
-		$("#registration-submit-btn").on("click", function(){
-			
-			$(this).submit();
 		});
 	}
 

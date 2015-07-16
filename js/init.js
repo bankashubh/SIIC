@@ -38,6 +38,8 @@
 		});
 		
 		$("#back-btn").on("click", function(){
+			if($current==0)
+				return;
 			$("#"+$pages[$current]+"-tab").addClass("disabled");
 			$current--;
 			

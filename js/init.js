@@ -32,6 +32,8 @@
 		//Prevent submit on enter
 		preventEnter();
 		
+		$("#"+$pages[$current]+"-tab ~ li a").addClass("red-text");
+		
 		console.log($("#"+$pages[$current]+" input"));
 		$("#"+$pages[$current]+" input").on("keyup change mouseenter", checkForEmptyFields);
 		
@@ -55,6 +57,7 @@
 			$current++;
 			
 			$("#"+$pages[$next]+"-tab").removeClass("disabled");
+			$("#"+$pages[$current]+"-tab a").removeClass("red-text");
 			$('ul.tabs').tabs('select_tab', $pages[$next]);
 			$next++;
 			
@@ -73,6 +76,7 @@
 			$current--;
 			
 			$("#"+$pages[$current]+"-tab").removeClass("disabled");
+			$("#"+$pages[$current]+"-tab").removeClass("green-text");
 			$('ul.tabs').tabs('select_tab', $pages[$current]);
 			$next--;
 			
@@ -83,15 +87,21 @@
 	
 	function checkForPageNumber($current){
 		if($current == 0)
-				$("#back-btn").addClass("disabled");
-			else
-				$("#back-btn").removeClass("disabled");
-			
-			if( $current == $pages.length-1 )
-				$("#next-btn").hide();
-			
-			if(($("#next-btn").is(":hidden")) && $current < $pages.length-1)
-				$("#next-btn").show();
+			$("#back-btn").addClass("disabled");
+		else
+			$("#back-btn").removeClass("disabled");
+		
+		if( $current == $pages.length-1 )
+			$("#next-btn").hide();
+		
+		if(($("#next-btn").is(":hidden")) && $current < $pages.length-1)
+			$("#next-btn").show();
+		
+		$previousTabs = $current-1;
+		while($previousTabs >= 0)
+			$("#"+$pages[$previousTabs--]+"-tab a").addClass("green-text");
+		$("#"+$pages[$current]+"-tab ~ li a").addClass("red-text");
+		
 	}
 	
 	function preventEnter(){

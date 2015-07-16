@@ -24,6 +24,43 @@ label.flow-text{
 color: #000000;;
 }
 
+
+/****************************
+FORM COLORS
+*****************************/
+ /* label color */
+   .input-field label {
+     color: #90CAF9;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label, .input-field input[type=tel]:focus + label, textarea {
+     color: #2196F3;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus, .input-field input[type=tel]:focus, textarea:focus {
+     border-bottom: 1px solid #2196F3;
+     box-shadow: 0 1px 0 0 #2196F3;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #4CAF50;
+     box-shadow: 0 1px 0 0 #4CAF50;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #F44336;
+     box-shadow: 0 1px 0 0 #F44336;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #2196F3;
+   }
+   /* icon prefix color */
+   .input-field .prefix {
+     color: #90CAF9;
+   }
+
+
 /****************************
 GENERAL
 *****************************/
@@ -41,6 +78,10 @@ REGISTRATION FORM
 
 .dropdown-content {
 	max-height: 212px;
+}
+
+.dropdown-content li > a, .dropdown-content li > span{
+	color: #2196F3;
 }
 
 #registration-card-container .tabs .indicator{

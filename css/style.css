@@ -23,3 +23,22 @@ text-transform: none;
 label.flow-text{
 color: #000000;;
 }
+
+/****************************
+REGISTRATION FORM
+*****************************/
+.card-action .row, .card-content .row {
+	margin-bottom: 0px;
+}
+
+.dropdown-content {
+	max-height: 212px;
+}
+
+#official, #professional {
+	min-height: 294px;
+}
+
+#register-number {
+	margin-bottom: 40px;
+}

@@ -43,11 +43,32 @@ REGISTRATION FORM
 	max-height: 212px;
 }
 
+#registration-card-container .tabs .indicator{
+	background-color: #2196F3;
+}
+
+#registration-card-container .tabs .tab a.active {
+	color: #2196F3;
+}
+
 #registration-card-container{
 	margin-left: auto;
 	margin-right: auto;
 }
 
+#registration-card-container .card-content {
+	padding-top: 0px;
+}
+
+#registration-submit-btn{
+	margin: 10px auto;
+	width: 40%;
+	
+}
+
+#error-msg{
+	margin-top: 0px;
+}
 #srm-mail {
 	padding-top:25px;
 }
@@ -59,3 +80,4 @@ REGISTRATION FORM
 #register-number {
 	margin-bottom: 40px;
 }
+
